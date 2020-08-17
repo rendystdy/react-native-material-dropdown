@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import {
   Text,
@@ -9,7 +9,7 @@ import {
   TouchableWithoutFeedback,
   Dimensions,
   Platform,
-  ViewPropTypes,
+//   ViewPropTypes,
   I18nManager,
 } from 'react-native';
 import Ripple from 'react-native-material-ripple';
@@ -78,82 +78,82 @@ export default class Dropdown extends PureComponent {
     useNativeDriver: false,
   };
 
-  static propTypes = {
-    ...TouchableWithoutFeedback.propTypes,
+//   static propTypes = {
+//     ...TouchableWithoutFeedback.propTypes,
 
-    disabled: PropTypes.bool,
+//     disabled: PropTypes.bool,
 
-    value: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-    ]),
+//     value: PropTypes.oneOfType([
+//       PropTypes.string,
+//       PropTypes.number,
+//     ]),
 
-    data: PropTypes.arrayOf(PropTypes.object),
+//     data: PropTypes.arrayOf(PropTypes.object),
 
-    valueExtractor: PropTypes.func,
-    labelExtractor: PropTypes.func,
-    propsExtractor: PropTypes.func,
+//     valueExtractor: PropTypes.func,
+//     labelExtractor: PropTypes.func,
+//     propsExtractor: PropTypes.func,
 
-    absoluteRTLLayout: PropTypes.bool,
+//     absoluteRTLLayout: PropTypes.bool,
 
-    dropdownOffset: PropTypes.shape({
-      top: PropTypes.number.isRequired,
-      left: PropTypes.number.isRequired,
-    }),
+//     dropdownOffset: PropTypes.shape({
+//       top: PropTypes.number.isRequired,
+//       left: PropTypes.number.isRequired,
+//     }),
 
-    dropdownMargins: PropTypes.shape({
-      min: PropTypes.number.isRequired,
-      max: PropTypes.number.isRequired,
-    }),
+//     dropdownMargins: PropTypes.shape({
+//       min: PropTypes.number.isRequired,
+//       max: PropTypes.number.isRequired,
+//     }),
 
-    dropdownPosition: PropTypes.number,
+//     dropdownPosition: PropTypes.number,
 
-    rippleColor: PropTypes.string,
-    rippleCentered: PropTypes.bool,
-    rippleSequential: PropTypes.bool,
+//     rippleColor: PropTypes.string,
+//     rippleCentered: PropTypes.bool,
+//     rippleSequential: PropTypes.bool,
 
-    rippleInsets: PropTypes.shape({
-      top: PropTypes.number,
-      right: PropTypes.number,
-      bottom: PropTypes.number,
-      left: PropTypes.number,
-    }),
+//     rippleInsets: PropTypes.shape({
+//       top: PropTypes.number,
+//       right: PropTypes.number,
+//       bottom: PropTypes.number,
+//       left: PropTypes.number,
+//     }),
 
-    rippleOpacity: PropTypes.number,
-    shadeOpacity: PropTypes.number,
+//     rippleOpacity: PropTypes.number,
+//     shadeOpacity: PropTypes.number,
 
-    rippleDuration: PropTypes.number,
-    animationDuration: PropTypes.number,
+//     rippleDuration: PropTypes.number,
+//     animationDuration: PropTypes.number,
 
-    fontSize: PropTypes.number,
+//     fontSize: PropTypes.number,
 
-    textColor: PropTypes.string,
-    itemColor: PropTypes.string,
-    selectedItemColor: PropTypes.string,
-    disabledItemColor: PropTypes.string,
-    baseColor: PropTypes.string,
+//     textColor: PropTypes.string,
+//     itemColor: PropTypes.string,
+//     selectedItemColor: PropTypes.string,
+//     disabledItemColor: PropTypes.string,
+//     baseColor: PropTypes.string,
 
-    itemTextStyle: Text.propTypes.style,
+//     itemTextStyle: Text.propTypes.style,
 
-    itemCount: PropTypes.number,
-    itemPadding: PropTypes.number,
+//     itemCount: PropTypes.number,
+//     itemPadding: PropTypes.number,
 
-    onLayout: PropTypes.func,
-    onFocus: PropTypes.func,
-    onBlur: PropTypes.func,
-    onChangeText: PropTypes.func,
+//     onLayout: PropTypes.func,
+//     onFocus: PropTypes.func,
+//     onBlur: PropTypes.func,
+//     onChangeText: PropTypes.func,
 
-    renderBase: PropTypes.func,
-    renderAccessory: PropTypes.func,
+//     renderBase: PropTypes.func,
+//     renderAccessory: PropTypes.func,
 
-    containerStyle: (ViewPropTypes || View.propTypes).style,
-    overlayStyle: (ViewPropTypes || View.propTypes).style,
-    pickerStyle: (ViewPropTypes || View.propTypes).style,
+//     containerStyle: (ViewPropTypes || View.propTypes).style,
+//     overlayStyle: (ViewPropTypes || View.propTypes).style,
+//     pickerStyle: (ViewPropTypes || View.propTypes).style,
 
-    supportedOrientations: PropTypes.arrayOf(PropTypes.string),
+//     supportedOrientations: PropTypes.arrayOf(PropTypes.string),
 
-    useNativeDriver: PropTypes.bool,
-  };
+//     useNativeDriver: PropTypes.bool,
+//   };
 
   constructor(props) {
     super(props);
