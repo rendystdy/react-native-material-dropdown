@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import { Button } from 'react-native-material-buttons';
 
@@ -12,11 +12,11 @@ export default class DropdownItem extends PureComponent {
     shadeBorderRadius: 0,
   };
 
-  static propTypes = {
-    ...Button.propTypes,
+//   static propTypes = {
+//     ...Button.propTypes,
 
-    index: PropTypes.number.isRequired,
-  };
+//     index: PropTypes.number.isRequired,
+//   };
 
   constructor(props) {
     super(props);
